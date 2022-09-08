@@ -4,11 +4,7 @@ public:
         int bal=0,count=0;
         for(int i=0;i<s.length();i++)
         {
-            if(s[i]=='L')
-                bal++;
-            else
-                bal--;
-            
+            bal += s[i] == 'L' ? 1 : -1;
             if(bal==0)
                 count++;
         }
